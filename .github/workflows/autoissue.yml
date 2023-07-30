@@ -8,6 +8,6 @@ jobs:
     name: create issue automatically
     steps:
       - name: first step
-        uses: Yourrrrlove/automatically-create-issue@main
+        uses: PaulChess/automatically-create-issue@main
         with:
           TOKEN: ${{ secrets.TOKEN }}
