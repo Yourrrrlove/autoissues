@@ -6,7 +6,7 @@
   "scripts": {
     "build": "ncc build main.js --license licenses.txt"
   },
-  "repository": "git@github.com:PaulChess/automatically-create-issue.git",
+  "repository": "git@github.com:Yourrrrlove/autoissues.git",
   "author": "Yourrrrlove <913072552@qq.com>",
   "license": "MIT",
   "dependencies": {
