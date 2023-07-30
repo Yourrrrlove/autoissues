@@ -1,0 +1,13 @@
+on:
+  schedule:
+    - cron: '0 23 * * *' # 北京时间早上7点自动创建
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    name: create issue automatically
+    steps:
+      - name: first step
+        uses: Yourrrrlove/automatically-create-issue@main
+        with:
+          TOKEN: ${{ secrets.TOKEN }}
