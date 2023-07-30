@@ -7,7 +7,7 @@
     "build": "ncc build main.js --license licenses.txt"
   },
   "repository": "git@github.com:PaulChess/automatically-create-issue.git",
-  "author": "Yourrrrlove <913072552@qq.com>",
+  "author": "paulChess <sjq15251852316@163.com>",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.6.0",
