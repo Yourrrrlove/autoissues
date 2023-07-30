@@ -1,19 +1,15 @@
-on: 
-   schedule:
-     - cron: "1 16 * * *"
+on:
+  schedule:
+    - cron:  '1 16 * * *'  
+
 jobs:
-  create_issues_action:
+  create_daily_plan_issue:
     runs-on: ubuntu-latest
-    name: create issues action
+    name: create daily plan issue
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: create issues action
-        uses: ./ # Uses an action in the root directory
+      - name: create daily plan issue action step
+        uses: cuixiaorui/create-daily-plan-issue-action@main
         with:
           token: ${{secrets.TOKEN}}
- runs:
-   using: 'node16'
-   main: 'index.js'
