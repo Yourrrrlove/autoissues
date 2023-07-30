@@ -1,9 +1,9 @@
-name: "auto create issues"
-description: "auto create issues"
+name: 'automatically create issue'
+description: 'automatically create issue'
 inputs:
-  token: # id of input
-    description: "github token"
+  TOKEN:  # id of input
+    description: 'secret token'
     required: true
 runs:
-  using: "node12"
-  main: "dist/index.js"
+  using: 'node12'
+  main: 'dist/index.js'
