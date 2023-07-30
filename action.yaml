@@ -1,0 +1,9 @@
+name: 'automatically create issue'
+description: 'automatically create issue'
+inputs:
+  TOKEN:  # id of input
+    description: 'secret token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
