@@ -1,19 +1,20 @@
 {
+  "name": "automatically-create-issue",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "create issue automatically",
+  "main": "main.js",
   "scripts": {
-    "build": "ncc build index.js --license licenses.txt"
+    "build": "ncc build main.js --license licenses.txt"
   },
-  "repository": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "git@github.com:PaulChess/automatically-create-issue.git",
+  "author": "Yourrrrlove <913072552@qq.com>",
+  "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "dayjs": "^1.10.7",
-    "octokit": "^1.7.0"
+    "octokit": "^1.7.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.31.1"
+    "@vercel/ncc": "^0.33.1"
   }
 }
