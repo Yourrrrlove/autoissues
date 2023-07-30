@@ -1,15 +1,13 @@
 on:
   schedule:
-    - cron:  '1 16 * * *'  
+    - cron: '0 23 * * *' # 北京时间早上7点自动创建
 
 jobs:
-  create_daily_plan_issue:
+  create_issue:
     runs-on: ubuntu-latest
-    name: create daily plan issue
+    name: create issue automatically
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: create daily plan issue action step
-        uses: cuixiaorui/create-daily-plan-issue-action@main
+      - name: first step
+        uses: Yourrrrlove/automatically-create-issue@main
         with:
-          token: ${{secrets.TOKEN}}
+          TOKEN: ${{ secrets.TOKEN }}
