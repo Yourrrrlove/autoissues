@@ -1,8 +1,8 @@
 
 on: [push]
-# on: 
-#   schedule:
-#     - cron: "1 16 * * *"
+ on: 
+   schedule:
+     - cron: "1 16 * * *"
 
 jobs:
   create_issues_action:
@@ -18,6 +18,6 @@ jobs:
         with:
           token: ${{secrets.TOKEN}}
 
-# runs:
-#   using: 'node16'
-#   main: 'index.js'
+ runs:
+   using: 'node16'
+   main: 'index.js'
